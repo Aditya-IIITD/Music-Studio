@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Music Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/53696b77df.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <section id="header-section">
+      <header id="main-header" class="mainheader">
+        <div id="header-container" class="main-header-div">
+          <!-- Div for left portion of header -->
+          <div class="leftdiv">
+            <div id="imagediv">
+              <img
+                src="https://music-player-coding-ninjas.vercel.app/logo.png"
+                alt="coding ninja logo"
+              />
+            </div>
+            <span id="Favourites"><a href="#">Favourites</a></span>
+          </div>
+          <!-- Div for right portion of header -->
+          <div class="rightdiv">
+            <!-- Div for icon-left + search bar + icon-right -->
+            <div id="search-bar" class="search">
+              <div id="icon-1" class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <input type="search" placeholder="Search..." />
+              <div id="icon-2" class="icon">
+                <i class="fa-solid fa-microphone"></i>
+              </div>
+            </div>
+            <!-- BELL Icon -->
+            <i id="bell" class="fa-sharp fa-solid fa-bell"></i>
+            <!-- Profile image -->
+            <img
+              src="https://preview.redd.it/characters-in-ben-10-who-definitely-need-therapy-v0-a06mgp56wr2a1.jpg?width=681&format=pjpg&auto=webp&s=faf3b86c49e001fee806f4ea022277cd66ba80a1"
+            />
+          </div>
+        </div>
+      </header>
+    </section>
+
+    <section id="main-section" class="main_section">
+      <div id="main-content">
+        <!-- Carousel  -->
+        <div class="container">
+          <!-- I created carouel using 3 Radio buttons , the image / song we click on will come in front -->
+          <input type="radio" name="slider" id="item-1" checked />
+          <input type="radio" name="slider" id="item-2" />
+          <input type="radio" name="slider" id="item-3" />
+          <div class="cards">
+            <label class="card" for="item-1" id="song-1">
+              <img
+                src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80"
+                alt="song"
+              />
+            </label>
+            <label class="card" for="item-2" id="song-2">
+              <img
+                src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
+                alt="song"
+              />
+            </label>
+            <label class="card" for="item-3" id="song-3">
+              <img
+                src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+                alt="song"
+              />
+            </label>
+          </div>
+        </div>
+
+        <!-- LATEST RELEASED SONGS -->
+        <div id="latestReleaseDiv" class="latestReleaseDiv">
+          <h3 class="h3Heading">Latest Release</h3>
+          <div id="song1" class="song">
+            <div class="songElement songheight">
+              <img
+                src="https://images.genius.com/e1c7dc1e1a5aaa5d8238702efc786725.1000x1000x1.png"
+              />
+              <div id="songInfo" class="songInfo">
+                <div id="songName" class="songName">Agro Hills</div>
+                <div id="singer" class="singer">Dec 1, 2023</div>
+              </div>
+            </div>
+            <div id="dotsIcon" class="dotsIcon">
+              <i class="fa-solid fa-ellipsis" style="color: #ffffff"></i>
+              <span>4:44</span>
+            </div>
+          </div>
+          <div id="song2" class="song">
+            <div class="songElement songheight">
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e022dfeb08abca4d6d567134f59"
+              />
+              <div id="songInfo" class="songInfo">
+                <div id="songName" class="songName">Carine</div>
+                <div id="singer" class="singer">Nov 23, 2023</div>
+              </div>
+            </div>
+            <div id="dotsIcon" class="dotsIcon">
+              <i class="fa-solid fa-ellipsis" style="color: #ffffff"></i>
+              <span>4:44</span>
+            </div>
+          </div>
+          <div id="song3" class="song">
+            <div class="songElement songheight">
+              <img
+                src="https://i1.sndcdn.com/artworks-67GWSrlae6UqudtY-N14WFg-t500x500.jpg"
+              />
+              <div id="songInfo" class="songInfo">
+                <div id="songName" class="songName">Drip</div>
+                <div id="singer" class="singer">Nov 11, 2023</div>
+              </div>
+            </div>
+            <div id="dotsIcon" class="dotsIcon">
+              <i class="fa-solid fa-ellipsis" style="color: #ffffff"></i>
+              <span>4:44</span>
+            </div>
+          </div>
+          <div id="song4" class="song">
+            <div class="songElement songheight">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMhV1QBCuWBH-9iKJvjxcy8X6Qyyr-URVvzK_lbVOW5G6fOjtLhPFOimjXFq6tU5U6F1o&usqp=CAU"
+              />
+              <div id="songInfo" class="songInfo">
+                <div id="songName" class="songName">WatchOut</div>
+                <div id="singer" class="singer">Nov 20, 2023</div>
+              </div>
+            </div>
+            <div id="dotsIcon" class="dotsIcon">
+              <i class="fa-solid fa-ellipsis" style="color: #ffffff"></i>
+              <span>4:44</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- POPULAR ARTISTS -->
+        <div id="popularArtists" class="popularArtists">
+          <h3 class="h3Heading">Popular Artists</h3>
+          <div class="artists">
+            <div id="artist1" class="artist">
+              <a href="">
+                <i class="fa-solid fa-play" style="color: #fafafa"></i>
+              </a>
+              <div class="artistName">Harry Styles</div>
+            </div>
+            <div id="artist2" class="artist">
+              <a href="">
+                <i class="fa-solid fa-play" style="color: #fafafa"></i>
+              </a>
+              <div class="artistName">Ed Sheeran</div>
+            </div>
+            <div id="artist3" class="artist">
+              <a href="./page2.html">
+                <i class="fa-solid fa-play" style="color: #fafafa"></i>
+              </a>
+
+              <div class="artistName">Coldplay</div>
+            </div>
+            <div id="artist4" class="artist">
+              <a href="">
+                <i class="fa-solid fa-play" style="color: #fafafa"></i>
+              </a>
+              <div class="artistName">Justin Bieber</div>
+            </div>
+            <div id="artist5" class="artist">
+              <a href="">
+                <i class="fa-solid fa-play" style="color: #fafafa"></i>
+              </a>
+              <div class="artistName">Imagine Dragons</div>
+            </div>
+            <div id="artist6" class="artist">
+              <a href="">
+                <i class="fa-solid fa-play" style="color: #fafafa"></i>
+              </a>
+              <div class="artistName">Taylor Swift</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MUSIC STATIONS -->
+        <div class="musicStations">
+          <div class="stationsIcon">
+            <div class="bottom"></div>
+            <div class="middle"></div>
+            <div class="top">
+              <div class="stationfontIcon">
+                <i class="fa-solid fa-icons" style="color: #ffffff"></i>
+              </div>
+              <h4>Stations</h4>
+            </div>
+          </div>
+          <div class="stations">
+            <div id="station1" class="station">
+              <h5 class="stationName">Love</h5>
+            </div>
+            <div id="station2" class="station">
+              <h5 class="stationName">Retro</h5>
+            </div>
+            <div id="station3" class="station">
+              <h5 class="stationName">Chill</h5>
+            </div>
+            <div id="station4" class="station">
+              <h6 class="stationName" style="left: 11%">Workout</h6>
+            </div>
+            <div id="station5" class="station">
+              <h5 class="stationName">Rock</h5>
+            </div>
+            <div id="station6" class="station">
+              <h5 class="stationName">Pop</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="musicCategory">
+          <div id="cat1" class="category"><h3>Party</h3></div>
+          <div id="cat2" class="category"><h3>Electronic</h3></div>
+          <div id="cat3" class="category"><h3>Road Trip</h3></div>
+        </div>
+
+        <div class="latestMusic">
+          <div id="latestEng" class="latest">
+            <h3 class="h3Heading">Latest English</h3>
+            <div id="EngMusic1" class="lMusic">
+              <div id="lmInfo">
+                <p class="lmName">Mirage</p>
+                <p class="lmDate">AUG 11,2023</p>
+              </div>
+            </div>
+            <div id="EngMusic2" class="lMusic">
+              <div id="lmInfo">
+                <p class="lmName">Sorry</p>
+                <p class="lmDate">MAY 21,2023</p>
+              </div>
+            </div>
+            <div id="EngMusic3" class="lMusic">
+              <div id="lmInfo">
+                <p class="lmName">Tumblr Girls</p>
+                <p class="lmDate">AUG 9,2023</p>
+              </div>
+            </div>
+            <div id="EngMusic4" class="lMusic">
+              <div id="lmInfo">
+                <p class="lmName">Hate the Way</p>
+                <p class="lmDate">NOV 17,2023</p>
+              </div>
+            </div>
+            <div id="EngMusic5" class="lMusic">
+              <div id="lmInfo">
+                <p class="lmName">Me, Myself & I</p>
+                <p class="lmDate">OCT 2,2023</p>
+              </div>
+            </div>
+            <div id="EngMusic6" class="lMusic">
+              <div id="lmInfo">
+                <p class="lmName">New Skin</p>
+                <p class="lmDate">OCT 25,2023</p>
+              </div>
+            </div>
+          </div>
+          <div id="latestHindi" class="latest">
+            <h3 class="h3Heading">Latest Hindi</h3>
+            <div id="hindiMusic1" class="lMusic">
+              <div id="lmInfo">
+                <p class="lmName">Arjan Valley</p>
+                <p class="lmDate">Nov 28,2023</p>
+              </div>
+            </div>
+            <div id="hindiMusic2" class="lMusic">
+              <div id="lmInfo">
+                <p class="lmName">Chaleya</p>
+                <p class="lmDate">Sep 17,2023</p>
+              </div>
+            </div>
+            <div id="hindiMusic3" class="lMusic">
+              <div id="lmInfo">
+                <p class="lmName">Kudiye Ni Tere</p>
+                <p class="lmDate">AUG 11,2023</p>
+              </div>
+            </div>
+            <div id="hindiMusic4" class="lMusic">
+              <div id="lmInfo">
+                <p class="lmName">Ek Mulaqat</p>
+                <p class="lmDate">Nov 22,2023</p>
+              </div>
+            </div>
+            <div id="hindiMusic5" class="lMusic">
+              <div id="lmInfo">
+                <p class="lmName">Not Ramaiya Vastavaiya</p>
+                <p class="lmDate">AUG 11,2023</p>
+              </div>
+            </div>
+            <div id="hindiMusic6" class="lMusic">
+              <div id="lmInfo">
+                <p class="lmName">Tere Ishq Ne</p>
+                <p class="lmDate">AUG 11,2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #############################################################################################3 -->
+
+      <!-- Aside Section -->
+      <aside id="aside-Queue">
+        <div id="asideQueueHeader" class="asidequeueHeader">
+          <div id="myplaylist" class="myplaylist"><h1>My Playlist</h1></div>
+          <div id="dropdown" class="dropdown">
+            <p>Queue</p>
+            <div id="icon">
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div id="options" class="options">
+              <div id="option1" class="option">Playlists</div>
+              <div id="option2" class="option">Favourite Songs</div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <div id="songsdiv" class="songsdiv">
+          <div id="song1" class="song">
+            <div class="songElement songheight">
+              <span id="count">01</span>
+              <img
+                src="https://c.saavncdn.com/051/Mi-Amor-Punjabi-2022-20220930164801-500x500.jpg"
+                class="songImgShadow"
+              />
+              <div id="songInfo" class="songInfo">
+                <div id="songName" class="songName">Mi Amor</div>
+                <div id="singer" class="singer">Sha, 40K & The Paul</div>
+              </div>
+            </div>
+            <div id="icon" class="icon iconheight">
+              <i class="fa-regular fa-heart" style="color: #ffffff"></i>
+            </div>
+          </div>
+          <div id="song2" class="song">
+            <div class="songElement songheight">
+              <span id="count">02</span>
+              <img
+                src="https://i.scdn.co/image/ab67616d0000b2733c5d63cc9c4a2964befb7731"
+                class="songImgShadow"
+              />
+              <div id="songInfo" class="songInfo">
+                <div id="songName" class="songName">Happy Hours</div>
+                <div id="singer" class="singer">Talha Anjum</div>
+              </div>
+            </div>
+            <div id="icon" class="icon iconheight">
+              <i class="fa-regular fa-heart" style="color: #ffffff"></i>
+            </div>
+          </div>
+          <div id="song3" class="song">
+            <div class="songElement songheight">
+              <span id="count">03</span>
+              <img
+                src="https://i1.sndcdn.com/artworks-6977kQUX1bNZO5iy-RS7iuA-t500x500.jpg"
+                class="songImgShadow"
+              />
+              <div id="songInfo" class="songInfo">
+                <div id="songName" class="songName">Zulfaan</div>
+                <div id="singer" class="singer">SARRB & STarboy X</div>
+              </div>
+            </div>
+            <div id="icon" class="icon iconheight">
+              <i class="fa-regular fa-heart" style="color: #ffffff"></i>
+            </div>
+          </div>
+          <div id="song4" class="song">
+            <div class="songElement songheight">
+              <span id="count">04</span>
+              <img
+                src="https://i1.sndcdn.com/artworks-n4GKuWwkGiEO-0-t500x500.jpg"
+                class="songImgShadow"
+              />
+              <div id="songInfo" class="songInfo">
+                <div id="songName" class="songName">9 Lives</div>
+                <div id="singer" class="singer">Machine Gun Kelly</div>
+              </div>
+            </div>
+            <div id="icon" class="icon iconheight">
+              <i class="fa-regular fa-heart" style="color: #ffffff"></i>
+            </div>
+          </div>
+          <div id="song5" class="song">
+            <div class="songElement songheight">
+              <span id="count">05</span>
+              <img
+                src="https://c.saavncdn.com/687/Dhundhala-Hindi-2022-20220214181940-500x500.jpg"
+                class="songImgShadow"
+              />
+              <div id="songInfo" class="songInfo">
+                <div id="songName" class="songName">Dhundhala</div>
+                <div id="singer" class="singer">Yashraj</div>
+              </div>
+            </div>
+            <div id="icon" class="icon iconheight">
+              <i class="fa-regular fa-heart" style="color: #ffffff"></i>
+            </div>
+          </div>
+          <div id="song6" class="song">
+            <div class="songElement songheight">
+              <span id="count">06</span>
+              <img
+                src="https://i1.sndcdn.com/artworks-UrTCiM0CBWoWmwE1-28fkYw-t500x500.jpg"
+                class="songImgShadow"
+              />
+              <div id="songInfo" class="songInfo">
+                <div id="songName" class="songName">Pahadon Me</div>
+                <div id="singer" class="singer">Salman Elahi</div>
+              </div>
+            </div>
+            <div id="icon" class="icon iconheight">
+              <i class="fa-regular fa-heart" style="color: #ffffff"></i>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+    <!-- ################################################ FOOTER ################################################## -->
+    <section id="footer">
+      <div class="musicBar">
+        <div id="barLeftDiv" class="barDiv">
+          <div class="barSong barSongShadow">
+            <img
+              src="https://i1.sndcdn.com/artworks-000145437931-n5w58g-t500x500.jpg"
+              class="songImgShadow"
+            />
+            <div id="songInfo" class="songInfo">
+              <div id="songName" class="songName">Mirage by Else</div>
+              <div id="singer" class="singer colorLightg">Else</div>
+            </div>
+          </div>
+          <div class="barIcons">
+            <span><i class="fa-regular fa-heart fa-xs"></i></span>
+            <span><i class="fa-solid fa-ban fa-xs"></i></span>
+          </div>
+        </div>
+        <div id="barMidDiv" class="barDiv">
+          <div id="midTop">
+            <div id="shuffleIcon" class="midIcon">
+              <i class="fa-solid fa-shuffle"></i>
+            </div>
+            <div id="musicControls" class="midControlIcons">
+              <div id="prev" class="npBtn">
+                <i class="fa-solid fa-backward-fast"></i>
+              </div>
+              <div id="play" class="playBtn">
+                <!-- <i class="fa-solid fa-play"></i> -->
+                <i class="fa-regular fa-circle-play"></i>
+              </div>
+              <div id="next" class="npBtn">
+                <i class="fa-solid fa-forward-fast"></i>
+              </div>
+            </div>
+            <div id="repeatIcon" class="midIcon">
+              <i class="fa-solid fa-repeat"></i>
+            </div>
+          </div>
+          <div id="midBottom">
+            <div id="ongoing" class="musicDuration">1:39</div>
+            <div class="timeLine">
+              <div id="leftTL"></div>
+              <div id="circle"></div>
+            </div>
+            <div id="totalTime" class="musicDuration">4:44</div>
+          </div>
+        </div>
+        <div id="barRightDiv" class="barDiv">
+          <div id="rightLeft" class="rightSymbol">
+            <i class="fas fa-headphones"></i>
+          </div>
+          <div id="rightMid" class="rightSymbol">
+            <i class="fas fa-sliders-h"></i>
+          </div>
+          <div id="rightRight">
+            <div id="Volume" class="innerRight">
+              <i class="fas fa-volume-up"></i>
+            </div>
+
+            <div class="volumeLine timeLine">
+              <div id="leftTL"></div>
+              <div id="circle"></div>
+            </div>
+            <div id="expand" class="innerRight">
+              <i class="fas fa-expand-alt fa-rotate-90"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
